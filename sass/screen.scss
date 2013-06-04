@@ -1,0 +1,48 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+	FONTS
+
+	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Alef', sans-serif;
+	font-family: 'Roboto Slab', serif;
+ */
+$menu   :'Noto Sans', sans-serif;
+$titulos: 'Roboto Slab', serif;
+$textos : 'Alef', sans-serif;
+
+@import "compass/reset";
+
+@mixin boxSizing{
+	box-sizing        : border-box;
+	-moz-box-sizing   : border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body{
+	background: #260226;
+}
+h1{
+	color        : #6a007a;
+	font-family  : $titulos;
+	font-size    : 36px;
+	margin: 0px 0px 15px 0px;
+}
+p{
+	color      : #333;
+	font-family: $textos;
+	font-size  : 16px;
+}
+.container{
+	background: #FFF;
+}
+.margenInterior{
+	@include boxSizing;
+	padding: 10px;
+}
+.nav li a{
+	color      : #161616;
+	font-family: $menu;
+	font-size  : 16px;
+}
